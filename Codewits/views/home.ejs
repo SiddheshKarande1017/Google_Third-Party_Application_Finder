@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Account Apps</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Additional styles specific to the granted access information */
+.access-granted {
+  margin-bottom: 20px;
+}
+
+.access-granted strong {
+  font-weight: bold;
+}
+
+.access-granted ul {
+  margin-left: 20px;
+}
+
+.access-granted li {
+  margin-bottom: 5px;
+}
+
+.access-granted li:before {
+  content: "▸";
+  margin-right: 5px;
+}
+
+.access-granted li:last-child {
+  margin-bottom: 0;
+}
+.top-image {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+<body>
+    <img class="top-image" src="https://thehackernews.com/new-images/img/b/R29vZ2xl/AVvXsEi8lCxJ_L3Qa8em9C7Sl8lGPrFtiFd6H-aLwXGn5NptdVaxTRmUaNInmIYpjK28RludpEo_9DB2moUk9ypuDFqQEKiVavr32-ez_Cc1_JfH0s4sOuAfEAuM9O-MvBxfxQSCnT71pfjEcaPOA4TPcU5Aff45tnBgEKwjnp-Oyj92ckBCIaYkOxnNl8ahyw/w0/apps.jpg" alt="Top Image">
+    <h1>Google Account Apps</h1>
+    <!-- <div id="apps-container"></div>
+    <script src="script.js"></script> --> 
+    <h1>Access Granted Information</h1>
+      <% if (applications && applications.length > 0) { %>
+          <ul>
+              <% applications.forEach(function(application) { %>
+                  <li>
+                      <strong>Application ID:</strong> <%= application.id %><br>
+                      <strong>Display Name:</strong> <%= application.displayName %><br>
+                      <strong>Scopes of Access:</strong>
+                      <ul>
+                          <% application.scopes.forEach(function(scope) { %>
+                              <li><%= scope %></li>
+                          <% }) %>
+                      </ul>
+                      <strong>Access Time:</strong> <%= application.accessTime %>
+                  </li>
+              <% }) %>
+          </ul>
+      <% } else { %>
+          <p>No applications found with access granted.</p>
+      <% } %>
+      <button><a href="http://localhost:3000">Home</a></button>
+</body>
+</html>
+
+
+
