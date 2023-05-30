@@ -15,7 +15,7 @@ This Node.js application helps users find third-party applications connected to 
        3. npm install google-auth-library
        4. npm install ejs
        
-         ```
+         
          
 ## Configuration ##
    1. Open the app.js file in a text editor.
