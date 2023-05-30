@@ -51,7 +51,7 @@ app.get('/auth/google/callback', (req, res) => {
 });
 
 app.get('/applications', (req, res) => {
-  const apiKey = 'AIzaSyB2TGS_hRtC2ee1eTzKq67fyfkJ9_j8YgI'; // Replace with your actual API key
+  const apiKey = 'AIzaSyB2TGS_hRtC2ee1eTzKq67fyfkJ9_j8YgI'; // actual API key
   const plus = google.plus({ version: 'v1', auth: apiKey });
   plus.people.list({
     userId: 'me',
