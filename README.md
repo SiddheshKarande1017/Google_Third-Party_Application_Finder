@@ -14,6 +14,7 @@ This Node.js application helps users find third-party applications connected to 
        2. npm install express
        3. npm install google-auth-library
        4. npm install ejs
+       
          ```
          
 ## Configuration ##
@@ -25,6 +26,7 @@ This Node.js application helps users find third-party applications connected to 
         'YOUR_CLIENT_SECRET',
         ['YOUR_REDIRECT_URL']
         );
+        
          ```
       * YOUR_CLIENT_ID: Your Google OAuth client ID.
       * YOUR_CLIENT_SECRET: Your Google OAuth client secret.
