@@ -38,7 +38,7 @@ This Node.js application helps users find third-party applications connected to 
    3. The application will display a homepage with a message indicating whether the authentication was successful or not.
    4. Click on the "Authenticate with Google" button to initiate the authentication process.
    5. You will be redirected to the Google authentication page. Log in with your Google account and grant access to the application.
-   6. Upon successful authentication, you will be redirected to the /applications route.
+   6. Upon successful authentication, you can click on Third-party Applications button for the /applications route.
    7. The /applications route will display a list of authorized third-party applications with access to your account data, along with the scopes of access and the access time.
    8. To access the applications route directly, you can navigate to http://localhost:3000/applications.
   
